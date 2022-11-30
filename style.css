@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(25, 25, 105);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+    box-shadow: 5px 5px 19px rgba(21, 21, 100, 0.7);
+    z-index: 1;
+}
+
+nav img {
+    width: 190px;
+    height: 70px;
+    cursor: pointer;
+}
+
+nav .navigation {
+    display: flex;
+}
+
+#menu-btn {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul{
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.3sec ease;
+}
+
+nav .navigation ul li a:hover{
+    color: yellow;
+}
+
+#home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/African-Leadership-University-Rwanda.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+major #home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/African-Leadership-University-Rwanda.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+#home h1{
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home .button{
+    margin-top: 30px;
+    word-spacing: 1px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3 ease;
+}
+
+#home a.blue:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+#home a.red{
+    color: #fff;
+    background: rgb(210, 4, 45);
+    transition: 0.3s ease;
+}
+
+#home a.red:hover {
+    color: rgb(210, 4, 45);
+    background: #fff;
+}
+
+#features{
+    padding: 5vw 8vw  8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features h1 {
+    font-size: 3rem;
+    font-weight: 650;
+    color: rgb(21, 21, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#features p {
+    font-size: 1.5rem;
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#features .fea-box{
+    background: #f9f9ff;
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 2.5rem;
+    color: rgb(25, 25, 105);
+}
+
+#features .fea-box h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+/* major */
+
+#major{
+    padding: 2vw 8vw 4vw 8vw;
+    text-align: center;
+}
+
+#major h1 {
+    font-size: 3rem;
+    font-weight: 650;
+    color: rgb(21, 21, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#major p {
+    font-size: 1.5rem;
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#major .major-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#major .majors{
+    text-align: center;
+    background: #f9f9ff;
+    height: 100%;
+    position: relative;
+}
+
+#major .majors img{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+#major .majors .details{
+    padding: 15px 15px 10px 15px;
+}
+
+#major .majors .details i{
+    color: #FDC93B;
+    font-size: .9rem;
+}
+
+#major .majors .abrev{
+    background-color: rgb(21, 21, 100);
+    color: #fff;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 35px;
+    font-family: Arial Black;
+    font-size: 1.5rem;
+}
+
+#image img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+    padding: 6vw 7vw 0 7vw;
+}
+
+#value{
+    padding: 5vw 8vw 6vw 8vw;
+    text-align: center;
+}
+
+#value .values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#value h2 {
+    font-size: 3rem;
+    font-weight: 650;
+    color: rgb(21, 21, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#value p {
+    font-size: 1.5rem;
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#value .value-box{
+    background: #f9f9ff;
+    text-align: center;
+}
+
+#value img{
+    size: 10px;
+
+}
+
+#value .value-box h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: rgb(46, 46, 59);
+    padding: 13px 10px 7px 0;
+}
+
+#value h1{
+    font-size: 3rem;
+    font-weight: 650;
+    color: rgb(21, 21, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#value .value-box p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+#registration {
+    padding: 6vw 7vw 6vw 7vw;
+    background-image: linear-gradient(rgba(99, 112, 168, 0.7), rgba(81, 91, 223, 0.6)),
+    url("images/registery-your-charity.jpg");
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .remainder {
+    color: #fff;
+}
+
+#registration .remainder h1 {
+    color: #fff;
+}
+
+#registration .remainder tr{
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .remainder td {
+    text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(35, 48, 145, 0.39);
+    border-radius: 8px;
+    margin: 0 5px 10px 5px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#registration .form{
+    background: #fff;
+    size: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(35, 48, 145, 0.39);
+}
+
+#registration .form input{
+    margin: 14px 5px;
+    padding: 15px 25px;
+    border: 2px solid rgb(21, 21, 100);
+    outline: none;
+}
+
+#registration .form .button{
+    margin-top: 20px;
+}
+
+#registration .form input::placeholder{
+    color: #313c5c;
+    font-weight: 450;
+    font-size: 0.95rem;
+}
+
+#registration .form a.red{
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 10px 35px;
+    margin: 5px 2px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    color: #fff;
+    background: rgb(210, 4, 45);
+    transition: 0.3s ease;
+}
+
+#registration .form a.red:hover {
+    color: rgb(210, 4, 45);
+    background: #f9f9b3;
+}
+
+#expert{
+    padding: 4vw 8vw 4vw 8vw;
+    text-align: center;
+}
+
+#expert h1{
+    font-size: 2.6rem;
+    color: rgb(21, 21, 100);
+}
+
+#expert p{
+    font-size: 1rem;
+    color: chocolate;
+}
+
+#expert .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#expert .expert-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+#expert .expert-box .profile:hover{
+    background: rgba(35, 48, 145, 0.39);
+}
+
+/* footer */
+
+footer{
+    padding: 5vw 5vw 1vw 4vw;
+    background-color: rgb(21, 21, 120);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-pro{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 650;
+    padding-bottom: 15px;
+}
+
+footer li{
+    list-style: none;
+    color: #9498a1;
+    padding: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2sec ease;
+}
+
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+
+footer p{
+    color: #9498a1;
+}
+
+footer input{
+    width: 200px;
+    padding: 15px 15px;
+    background: #3b5a7a;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+footer .subscription a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 15px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+footer .subscription a.red{
+    color: #fff;
+    background: rgb(210, 4, 45);
+    transition: 0.2s ease;
+}
+footer .subscription a.red:hover {
+    color: rgb(210, 4, 45);
+    background: #fff;
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p{
+    text-align: center;
+}
+
+footer .copyright .pro-links{
+    margin-top: 0;
+}
+
+footer .copyright .pro-links i{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 8px;
+}
+
+footer .copyright .pro-links i:hover{
+    color: red;
+}
+
+@media screen and (max-width: 769px){
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 150px;
+        height: 55px;
+    }
+    #menu-btn {
+        display: initial;
+    }
+    
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+    }
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 120vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: 0.2s ease;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin: 0;
+    }
+
+    nav .navigation ul li a {
+        color: #fff;
+    }
+    #home {
+        padding-top: 0px;
+    }
+    #home p{
+        width: 90%
+    }
+    #features {
+        padding: 8vw 4vw 0 4vw;
+    }
+    #course {
+        padding: 8vw 4vw 0 4vw;
+    }
+    #registration{
+        margin-top: 8vw;
+        padding: 6vw 4vw 6vw 4vw;
+    }
+    #registration .remainder .time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    #expert {
+        padding: 4vw 8vw 4vw 8vw;
+        text-align: center;
+    }
+    #expert .expert-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+    }
+    footer .copyright .pro-links {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    #registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registration .remainder .time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+@media  screen and (max-width: 360) {
+    #home h1 {
+        color: #fff;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+}

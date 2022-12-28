@@ -18,7 +18,7 @@ nav {
     align-items: center;
     padding: 0vw 3vw;
     box-shadow: 5px 5px 19px rgba(21, 21, 100, 0.7);
-    z-index: 1;
+    z-index: 999;
 }
 
 nav img {
@@ -345,12 +345,12 @@ major #home{
     color: #fff;
 }
 
-#registration .remainder tr{
+#registration .remainder .time{
     display: flex;
     margin-top: 40px;
 }
 
-#registration .remainder td {
+#registration .remainder .time .date  {
     text-align: center;
     padding: 13px 33px;
     background-color: rgba(255, 255, 255, 0.25);

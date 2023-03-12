@@ -1,0 +1,55 @@
+body {
+  background-image: url("todoo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.watermark-container {
+  background-color: transparent;
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  display: block;
+}
+
+h1 {
+	text-align: center;
+    color: white;
+}
+
+input[type=text] {
+	padding: 8px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+button {
+	padding: 8px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 8px;
+	margin-bottom: 5px;
+	background-color: #f2f2f2;
+}
+
+li.checked {
+	background-color: #4CAF50;
+	color: white;
+	text-decoration: line-through;
+}
